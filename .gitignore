@@ -4,6 +4,7 @@
 /dist
 /tmp
 
+
 # dependencies
 /node_modules
 /bower_components
@@ -16,6 +17,7 @@
 .c9/
 *.launch
 .settings/
+.history
 
 # misc
 /.sass-cache

@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<input type="text" placeholder="Name" #name>
+<input type="text" placeholder="Message" #msg>
+<button (click)="getEcho(name.value, msg.value)">getEcho</button>
+<h2>{{echo}}</h2>
+
+
+<br/><br/>
+<button (click)="getTime()">getTime</button>
+<h2>{{time | json }}</h2>

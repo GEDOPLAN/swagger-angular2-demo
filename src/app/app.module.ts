@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {BASE_PATH} from './gen/variables'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    {provide: BASE_PATH, useValue: "http://localhost:8080"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
